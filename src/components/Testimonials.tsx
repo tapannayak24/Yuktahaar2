@@ -1,95 +1,56 @@
-import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
-
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
-import userThreeImg from "../../public/img/user3.jpg";
 
 export const Testimonials = () => {
   return (
     <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
-            </p>
-
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
-          </div>
+      <h2 className="text-3xl font-bold text-center mb-10">
+        What They Say About Us
+      </h2>
+      <div className="grid gap-10 lg:grid-cols-2">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-xl font-semibold mb-4">Satisfied Consumers</h3>
+          <TestimonialCard
+            content="Thanks to Yuktahaar for introducing us with people who care for people and environment instead of minting money......"
+            name="Mrs. Vrushali Bhalerao"
+          />
+          <TestimonialCard
+            content=".. and the most important part is to locate such genuine producers, source and make available good and nutritive products to our home... Thanks yuktahaar team..."
+            name="Prof Rajnish Deshpande"
+          />
+          <TestimonialCard
+            content="...Our families consider ourselves blessed to have access to such a platform, where we can procure authentic organic produce and savor the true richness of nature...."
+            name="Mrs. Preeti Iyer"
+          />
+          <p className="mt-4 text-green-600">
+            more than 100 families trust Yuktahaar.....
+          </p>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
-            </p>
-
-            <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
-            />
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
-            </p>
-
-            <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
-            />
-          </div>
+        <div className="bg-green-50 p-6 rounded-lg shadow-md">
+          <h3 className="text-xl font-semibold mb-4">Trusted Producers</h3>
+          <TestimonialCard
+            content="Proud to be part of yuktahaar community as it has got strong basis of thought and gives importance to relationships ultimately leading to a feeling of extended family..."
+            name="Mandar Deshpande: Organic Farmer, Wardha"
+          />
+          <p className="mt-4 text-green-600">
+            more than 50 producers trust Yuktahaar...
+          </p>
         </div>
       </div>
     </Container>
   );
 };
 
-interface AvatarProps {
-  image: any;
+interface TestimonialCardProps {
+  content: string;
   name: string;
-  title: string;
 }
 
-function Avatar(props: Readonly<AvatarProps>) {
+function TestimonialCard({ content, name }: TestimonialCardProps) {
   return (
-    <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
-          src={props.image}
-          width="40"
-          height="40"
-          alt="Avatar"
-          placeholder="blur"
-        />
-      </div>
-      <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
-      </div>
+    <div className="mb-6">
+      <p className="text-gray-700 mb-2">{content}</p>
+      <p className="text-right font-medium">- {name}</p>
     </div>
-  );
-}
-
-function Mark(props: { readonly children: React.ReactNode }) {
-  return (
-    <>
-      {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
-        {props.children}
-      </mark>{" "}
-    </>
   );
 }

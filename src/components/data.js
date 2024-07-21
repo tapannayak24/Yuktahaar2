@@ -1,60 +1,59 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
-} from "@heroicons/react/24/solid";
+  Leaf,
+  ShoppingBag,
+  Users,
+  Heart,
+  Sparkles,
+  Globe,
+} from "lucide-react";
 
 import benefitOneImg from "../../public/img/benefit-one.png";
 import benefitTwoImg from "../../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Connecting Conscious Consumers with Organic Producers",
+  desc: "Yuktahaar is a community of health, lifestyle, and food-conscious families who want to understand good health and purposeful living, and find ways to improve it.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Educate about Diet and Health",
+      desc: "We provide information on healthy eating and sustainable living.",
+      icon: <Leaf />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
+      title: "Source Genuine Products",
+      desc: "We locate and verify natural, chemical-free producers for you.",
+      icon: <ShoppingBag />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
+      title: "Build Lasting Relationships",
+      desc: "We create bonds between producers, consumers, and facilitators.",
+      icon: <Users />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Our Commitment to Sustainable Living",
+  desc: "Yuktahaar aims to develop a seamless community of producers, facilitators, and consumers, ultimately trying to eliminate the market in all its forms.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Transparent Service",
+      desc: "Get to know the manufacturers and check products yourself.",
+      icon: <Heart />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
+      title: "Wide Product Range",
+      desc: "Over 300 different organic and natural products available.",
+      icon: <Sparkles />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Local Focus",
+      desc: "Priority given to farmers from Nagpur and Vidarbha region.",
+      icon: <Globe />,
     },
   ],
 };
-
 
 export {benefitOne, benefitTwo};

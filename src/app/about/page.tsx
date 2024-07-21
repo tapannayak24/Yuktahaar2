@@ -49,7 +49,7 @@ export default function About() {
         </p>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           Supported wholeheartedly by his nutritionist wife, Swati, their
-          venture embodies their shared vision of a greener and healthier world.
+          venture embodies their shared vision of a limeer and healthier world.
           Together, they are here to inspire you to live in harmony with nature.
         </p>
       </div>
