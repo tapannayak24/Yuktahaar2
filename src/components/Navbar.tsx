@@ -77,6 +77,9 @@ export const Navbar = () => {
                     >
                       Shop Now
                     </Link>
+                    <div className="mt-3">
+                      <ThemeChanger />
+                    </div>
                   </>
                 </Disclosure.Panel>
               </div>
