@@ -5,25 +5,24 @@ import { Container } from "@/components/Container";
 
 export function Footer() {
   const navigation = [
-    "About",
-    "Products",
-    "How It Works",
-    "Join Us",
-    "Contact",
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Products", href: "/products" },
+    { name: "Contact", href: "/contact" },
   ];
-  const legal = ["Terms", "Privacy", "Legal"];
+
   return (
     <div className="relative">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
+          <div className="lg:col-span-1">
             <div>
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-lime-500 dark:text-gray-100"
+                className="flex items-center space-x-2 text-2xl font-medium text-lime-800 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.jpg"
+                  src="/logo.jpg"
                   alt="Yuktahaar"
                   width="32"
                   height="32"
@@ -38,17 +37,6 @@ export function Footer() {
               with organic producers. We facilitate a sustainable and purposeful
               lifestyle through clean, natural food.
             </div>
-
-            <div className="mt-5">
-              <a
-                href="mailto:yuktahaarorganics@gmail.com"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44"
-              >
-                yuktahaarorganics@gmail.com
-              </a>
-            </div>
           </div>
 
           <div>
@@ -56,27 +44,15 @@ export function Footer() {
               {navigation.map((item, index) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={item.href}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-lime-500 focus:text-lime-500 focus:bg-lime-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </div>
           </div>
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-lime-500 focus:text-lime-500 focus:bg-lime-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
+
           <div className="">
             <div>Contact Us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
@@ -105,6 +81,16 @@ export function Footer() {
                 >
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
+              </a>
+            </div>
+            <div className="mt-5">
+              <a
+                href="mailto:yuktahaarorganics@gmail.com"
+                target="_blank"
+                rel="noopener"
+                className="relative block w-44"
+              >
+                yuktahaarorganics@gmail.com
               </a>
             </div>
           </div>

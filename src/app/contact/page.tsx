@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -8,27 +9,38 @@ export default function Contact() {
         We'd love to hear from you. Reach out to us for any queries or support.
       </SectionTitle>
 
-      <div className="flex flex-col md:flex-row justify-between gap-8 mb-20">
-        <div className="md:w-1/2">
-          <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-2">
-            <strong>Address:</strong> Plot no 26, Dharampeth housing society,
-            4th layout, Jaiprakash nagar, khamla, Nagpur 440025
-          </p>
-          <p className="text-gray-600 dark:text-gray-400 mb-2">
-            <strong>Email:</strong> yuktahaarorganics@gmail.com
-          </p>
-          <p className="text-gray-600 dark:text-gray-400 mb-2">
-            <strong>Phone:</strong> 7987624802
-          </p>
-        </div>
-        <div className="md:w-1/2">
-          <h3 className="text-2xl font-bold mb-4">Send us a Message</h3>
-          {/* Add a contact form here */}
-          <p className="text-gray-600 dark:text-gray-400">
-            Contact form coming soon. In the meantime, please reach out to us
-            via email or phone.
-          </p>
+      <div className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mt-8">
+        <div className="space-y-6">
+          <div className="flex items-center">
+            <MapPin className="w-8 h-8 text-lime-500 mr-4" />
+            <p className="text-lg">
+              Plot no 26, Dharampeth housing society,
+              <br />
+              4th layout, Jaiprakash nagar, khamla,
+              <br />
+              Nagpur 440025
+            </p>
+          </div>
+
+          <div className="flex items-center">
+            <Mail className="w-8 h-8 text-lime-500 mr-4" />
+            <a
+              href="mailto:yuktahaarorganics@gmail.com"
+              className="text-lg text-lime-600 dark:text-blue-400 hover:underline"
+            >
+              yuktahaarorganics@gmail.com
+            </a>
+          </div>
+
+          <div className="flex items-center">
+            <Phone className="w-8 h-8 text-lime-500 mr-4" />
+            <a
+              href="tel:+917987624802"
+              className="text-lg text-lime-600 dark:text-blue-400 hover:underline"
+            >
+              +91 7987624802
+            </a>
+          </div>
         </div>
       </div>
     </Container>
