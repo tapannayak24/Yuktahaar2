@@ -9,6 +9,8 @@ export function Footer() {
     { name: "About", href: "/about" },
     { name: "Products", href: "/products" },
     { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms and Conditions", href: "/terms" },
   ];
 
   return (
