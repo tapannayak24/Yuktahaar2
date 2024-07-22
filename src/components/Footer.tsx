@@ -94,6 +94,14 @@ export function Footer() {
               >
                 yuktahaarorganics@gmail.com
               </a>
+              <a
+                href="mailto:info@yuktahaar.org"
+                target="_blank"
+                rel="noopener"
+                className="relative block w-44"
+              >
+                info@yuktahaar.org
+              </a>
             </div>
           </div>
         </div>

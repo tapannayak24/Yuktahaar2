@@ -42,6 +42,7 @@ export default function Terms() {
         <h2>10. Contact Us</h2>
         <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
         <p>
+          Email: info@yuktahaar.org<br />
           Email: yuktahaarorganics@gmail.com<br />
           Phone: +91 7987624802<br />
           Address: Plot no 26, Dharampeth housing society, 4th layout, Jaiprakash nagar, khamla, Nagpur 440025

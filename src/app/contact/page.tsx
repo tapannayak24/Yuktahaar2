@@ -33,6 +33,16 @@ export default function Contact() {
           </div>
 
           <div className="flex items-center">
+            <Mail className="w-8 h-8 text-lime-500 mr-4" />
+            <a
+              href="mailto:info@yuktahaar.org"
+              className="text-lg text-lime-600 dark:text-lime-400 hover:underline"
+            >
+              info@yuktahaar.org
+            </a>
+          </div>
+
+          <div className="flex items-center">
             <Phone className="w-8 h-8 text-lime-500 mr-4" />
             <a
               href="tel:+917987624802"
