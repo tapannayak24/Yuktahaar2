@@ -25,8 +25,7 @@ export const Testimonials = () => {
             name="Mrs. Preeti Iyer"
           />
           <p className="mt-4 text-lg text-green-600 dark:text-green-400">
-            <span className="font-bold">100+ families</span> trust
-            Yuktahaar.
+            <span className="font-bold">200+ families</span> trust Yuktahaar.
           </p>
         </div>
         <div className="bg-green-50 dark:bg-green-950 p-6 rounded-lg shadow-md">
@@ -38,8 +37,7 @@ export const Testimonials = () => {
             name="Mandar Deshpande: Organic Farmer, Wardha"
           />
           <p className="mt-4 text-lg text-green-600 dark:text-green-400">
-            <span className="font-bold">50+ producers</span> trust
-            Yuktahaar.
+            <span className="font-bold">50+ producers</span> trust Yuktahaar.
           </p>
         </div>
       </div>
