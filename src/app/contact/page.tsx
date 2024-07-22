@@ -9,14 +9,14 @@ export default function Contact() {
         We'd love to hear from you. Reach out to us for any queries or support.
       </SectionTitle>
 
-      <div className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mt-8">
+      <div className="max-w-2xl mx-auto bg-lime-50 dark:bg-lime-950 rounded-lg shadow-lg p-8 mt-8">
         <div className="space-y-6">
           <div className="flex items-center">
             <MapPin className="w-8 h-8 text-lime-500 mr-4" />
             <p className="text-lg">
-              Plot no 26, Dharampeth housing society,
+              Plot No. 26, Dharampeth Housing Society,
               <br />
-              4th layout, Jaiprakash nagar, khamla,
+              4th layout, Jaiprakash Nagar, Khamla,
               <br />
               Nagpur 440025
             </p>
@@ -26,7 +26,7 @@ export default function Contact() {
             <Mail className="w-8 h-8 text-lime-500 mr-4" />
             <a
               href="mailto:yuktahaarorganics@gmail.com"
-              className="text-lg text-lime-600 dark:text-blue-400 hover:underline"
+              className="text-lg text-lime-600 dark:text-lime-400 hover:underline"
             >
               yuktahaarorganics@gmail.com
             </a>
@@ -36,7 +36,7 @@ export default function Contact() {
             <Phone className="w-8 h-8 text-lime-500 mr-4" />
             <a
               href="tel:+917987624802"
-              className="text-lg text-lime-600 dark:text-blue-400 hover:underline"
+              className="text-lg text-lime-600 dark:text-lime-400 hover:underline"
             >
               +91 7987624802
             </a>
