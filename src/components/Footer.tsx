@@ -22,7 +22,7 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-lime-800 dark:text-gray-100"
               >
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.png"
                   alt="Yuktahaar"
                   width="32"
                   height="32"

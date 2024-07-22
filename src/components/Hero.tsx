@@ -39,9 +39,9 @@ export const Hero = () => {
         <div className="flex items-center justify-center w-full lg:w-1/3">
           <div className="">
             <Image
-              src="/screen1.jpg"
-              width="1062"
-              height="1754"
+              src="/screen1.png"
+              width="1080"
+              height="1920"
               className={"object-cover"}
               alt="Hero Illustration"
               loading="eager"

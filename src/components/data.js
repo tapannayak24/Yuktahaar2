@@ -7,8 +7,8 @@ import {
   Globe,
 } from "lucide-react";
 
-import benefitOneImg from "../../public/screen2.jpg";
-import benefitTwoImg from "../../public/screen3.jpg";
+import benefitOneImg from "../../public/screen2.png";
+import benefitTwoImg from "../../public/screen3.png";
 
 const benefitOne = {
   title: "Connecting Conscious Consumers with Organic Producers",
