@@ -24,8 +24,9 @@ export const Testimonials = () => {
             content="...Our families consider ourselves blessed to have access to such a platform, where we can procure authentic organic produce and savor the true richness of nature...."
             name="Mrs. Preeti Iyer"
           />
-          <p className="mt-4 text-green-600 dark:text-green-400">
-            more than 100 families trust Yuktahaar.....
+          <p className="mt-4 text-lg text-green-600 dark:text-green-400">
+            <span className="font-bold">100+ families</span> trust
+            Yuktahaar.
           </p>
         </div>
         <div className="bg-green-50 dark:bg-green-950 p-6 rounded-lg shadow-md">
@@ -36,8 +37,9 @@ export const Testimonials = () => {
             content="Proud to be part of yuktahaar community as it has got strong basis of thought and gives importance to relationships ultimately leading to a feeling of extended family..."
             name="Mandar Deshpande: Organic Farmer, Wardha"
           />
-          <p className="mt-4 text-green-600 dark:text-green-400">
-            more than 50 producers trust Yuktahaar...
+          <p className="mt-4 text-lg text-green-600 dark:text-green-400">
+            <span className="font-bold">50+ producers</span> trust
+            Yuktahaar.
           </p>
         </div>
       </div>
