@@ -87,14 +87,6 @@ export function Footer() {
             </div>
             <div className="mt-5">
               <a
-                href="mailto:yuktahaarorganics@gmail.com"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44"
-              >
-                yuktahaarorganics@gmail.com
-              </a>
-              <a
                 href="mailto:info@yuktahaar.org"
                 target="_blank"
                 rel="noopener"

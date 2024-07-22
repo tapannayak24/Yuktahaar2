@@ -25,16 +25,6 @@ export default function Contact() {
           <div className="flex items-center">
             <Mail className="w-8 h-8 text-lime-500 mr-4" />
             <a
-              href="mailto:yuktahaarorganics@gmail.com"
-              className="text-lg text-lime-600 dark:text-lime-400 hover:underline"
-            >
-              yuktahaarorganics@gmail.com
-            </a>
-          </div>
-
-          <div className="flex items-center">
-            <Mail className="w-8 h-8 text-lime-500 mr-4" />
-            <a
               href="mailto:info@yuktahaar.org"
               className="text-lg text-lime-600 dark:text-lime-400 hover:underline"
             >
