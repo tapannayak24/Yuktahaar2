@@ -15,6 +15,8 @@ const benefitOne = {
   desc: "Yuktahaar is a community of health, lifestyle, and food-conscious families who want to understand good health and purposeful living, and find ways to improve it.",
   image: benefitOneImg,
   bullets: [
+  
+
     {
       title: "Educate about Diet and Health",
       desc: "We provide information on healthy eating and sustainable living.",

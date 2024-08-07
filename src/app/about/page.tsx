@@ -7,10 +7,10 @@ export default function About() {
   return (
     <Container>
       <SectionTitle preTitle="Our Story" title="About Yuktahaar">
-        Discover the journey and philosophy behind Yuktahaar
+        Discover the journey and philosophy behind Yuktahaar  
       </SectionTitle>
 
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-20">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-20 px-4 md:px-16">
         <div className="md:w-1/2">
           <Image
             src="/founders.jpg"
@@ -40,7 +40,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mb-20">
+      <div className="mb-20 px-4 md:px-16">
         <h3 className="text-2xl font-bold mb-4">Our Founders</h3>
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div className="md:w-1/2">
@@ -94,7 +94,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mb-20">
+      <div className="mb-20 px-4 md:px-16">
         <h3 className="text-2xl font-bold mb-4">Our Journey</h3>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           After years in the corporate world, Hemant realized the need for a

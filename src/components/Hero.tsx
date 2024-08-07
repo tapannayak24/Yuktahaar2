@@ -10,10 +10,10 @@ export const Hero = () => {
 
   return (
     <>
-      <Container className="flex flex-wrap ">
-        <div className="flex items-center w-full lg:w-2/3">
+      <Container className="flex flex-wrap pr-0 pl-0 md:pl-16 md:pr-16">
+        <div className="flex items-center w-full lg:w-2/3  pr-0 pl-0 md:pl-16 md:pr-16">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white ">
               Yuktahaar: Health, Wellness, and Purpose
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">

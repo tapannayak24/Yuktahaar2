@@ -3,11 +3,11 @@ import { Container } from "@/components/Container";
 
 export const Testimonials = () => {
   return (
-    <Container>
+    <Container className="  bg-[#FAFAFA]" >
       <h2 className="text-3xl font-bold text-center mb-10 dark:text-white">
         What They Say About Us
       </h2>
-      <div className="grid gap-10 lg:grid-cols-2">
+      <div className="grid gap-10 lg:grid-cols-2 pr-0 pl-0 md:pl-16 md:pr-16">
         <div className="bg-white dark:bg-lime-950 p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-semibold mb-4 dark:text-white">
             Satisfied Consumers
@@ -15,7 +15,7 @@ export const Testimonials = () => {
           <TestimonialCard
             content="Thanks to Yuktahaar for introducing us with people who care for people and environment instead of minting money......"
             name="Mrs. Vrushali Bhalerao"
-          />
+          />  
           <TestimonialCard
             content=".. and the most important part is to locate such genuine producers, source and make available good and nutritive products to our home... Thanks yuktahaar team..."
             name="Prof Rajnish Deshpande"
