@@ -1,20 +1,20 @@
 import React from 'react';
 import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
-import { ShoppingBag, Apple, Coffee, Wheat, Bean, Drumstick, Pepper, Oil, Milk, Cookie, Salt, Fruit, Carrot, Cherry, Candy, Banana, Flour } from 'lucide-react';
+import { ShoppingBag, Apple, Coffee, Wheat, Bean, Drumstick, Leaf, Droplet, Cheese, Cookie, CloudRain, Grape, Carrot, Cherry, Candy, Banana, Flour } from 'lucide-react';
 
 const iconMap = {
   'main grains': Wheat,
   'pulses': Bean,
   'khada anaaj': Drumstick,
-  'spices': Pepper,
-  'wood cold pressed oil': Oil,
-  'pure desi cow bilona ghee': Milk,
+  'spices': Leaf,  // Replaced Pepper with Leaf
+  'wood cold pressed oil': Droplet,  // Replaced Oil with Droplet
+  'pure desi cow bilona ghee': Cheese,  // Replaced Milk with Cheese
   'natural sweeteners': Cookie,
-  'pink salt': Salt,
-  'seasonal fruits': Fruit,
+  'pink salt': CloudRain,  // Replaced Salt with CloudRain
+  'seasonal fruits': Grape,  // Replaced Fruit with Grape
   'seasonal vegetables': Carrot,
-  'milk products': Milk,
+  'milk products': Cheese,  // Replaced Milk with Cheese
   'gulkand': Cherry,
   '10 types of laddoos': Candy,
   'seasonal syrup': Coffee,
@@ -45,12 +45,11 @@ const ProductSection = ({ title, items, icon: Icon }) => {
           <BoxUIElement key={index} item={item} />
         ))}
       </div>
-    <div className="mt-4   bottom-0">
-      <button className="w-full bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
-        View All Products
-      </button>
+      <div className="mt-4 bottom-0">
+        <button className="w-full bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+          View All Products
+        </button>
       </div>
-      
     </div>
   );
 };
